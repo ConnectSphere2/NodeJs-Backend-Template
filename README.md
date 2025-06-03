@@ -28,7 +28,7 @@ This is a scalable and production-ready Node.js backend boilerplate using:
 
 ## 📁 Folder Structure
 
-```bash
+
 .
 ├── src/
 │   ├── config/        # DB, Redis, Logger config
@@ -55,61 +55,42 @@ This is a scalable and production-ready Node.js backend boilerplate using:
 
 🚀 Getting Started
 1️⃣ Clone & Install
-bash
-Copy
-Edit
 git clone https://github.com/ConnectSphere2/NodeJs-Backend-Template.git
 cd your-nodejs-template
 npm install
 2️⃣ Environment Variables
 Create a .env file in the root:
 
-env
-Copy
-Edit
+
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/test
 REDIS_URL=redis://localhost:6379
 🧪 Running the Project
 Run in Dev Mode (with Nodemon)
-bash
-Copy
-Edit
+
 npm run dev
 Run in Production Mode
-bash
-Copy
-Edit
+
 npm run build
 npm start
 🧹 Code Quality
 Run Lint
-bash
-Copy
-Edit
+
 npm run lint
 Run Formatter (Prettier)
-bash
-Copy
-Edit
+
 npm run format
 Check Format (without fixing)
-bash
-Copy
-Edit
+
 npm run format:check
 🧪 Testing
-bash
-Copy
-Edit
+
 npm run test
 🔐 Git Hooks with Husky
 Git hooks are set up with Husky to run lint and tests before every commit.
 
 Enable hooks after cloning:
-bash
-Copy
-Edit
+
 npx husky install
 ⚙️ GitHub Actions
 CI is configured via .github/workflows/ci.yml. It runs:
@@ -139,11 +120,8 @@ Open a Pull Request
 📜 License
 This project is licensed under the MIT License.
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Arbaaz khan
 
-yaml
-Copy
-Edit
 
 ---
 
