@@ -1,0 +1,50 @@
+{
+  "name": "nodejs-backend-template",
+  "version": "1.0.0",
+  "description": "NodeJs Backend Common Template",
+  "keywords": [
+    "Node",
+    "MongoDB",
+    "Websockets"
+  ],
+  "license": "ISC",
+  "author": "Arbaaz Khan",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest --config jest.config.ts",
+    "prepare": "husky",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "redis": "^5.1.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/express": "^5.0.2",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.29",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,json,md}": "prettier --write"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
